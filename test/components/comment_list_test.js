@@ -19,4 +19,5 @@ describe('CommentList', () => {
     expect(component).to.contain('New Comment');
     expect(component).to.contain('Other New Comment');
   });
+
 });

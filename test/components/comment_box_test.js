@@ -31,5 +31,19 @@ describe('CommentBox', () => {
       component.simulate('submit');
       expect(component.find('textarea')).to.have.value('');
     });
+    it('does not show error message when entering some text', () => {
+      component.simulate('submit');
+      expect(component.find('.comment-required')).to.not.exist;
+    });
   });
+  // describe('entering no text', () => {
+  //   // I don't know why this is throwing error (invariant violation)
+  //   beforeEach(() => {
+  //     component.find('textarea').simulate('change', '');
+  //   })
+  //   it('shows error message when entering no text', () => {
+  //     component.simulate('submit');
+  //     expect(component.find('.comment-required')).to.exist;
+  //   });
+  // });
 });
