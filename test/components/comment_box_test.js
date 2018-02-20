@@ -1,5 +1,4 @@
 import { renderComponent, expect } from '../test_helper';
-import 'jsdom-global/register';
 import CommentBox from '../../src/components/comment_box';
 
 describe('CommentBox', () => {
